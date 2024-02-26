@@ -1,4 +1,4 @@
-wait(5)
+wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-188.7037353515625, 8.777145385742188, 78.1675033569336)
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.8138885498047, 8.777145385742188, 67.15576171875)
@@ -41,7 +41,6 @@ local positions = {
     {-257.15679931640625, 8.777145385742188, -76.70610809326172},
     {-271.5988464355469, 8.777145385742188, -74.26280212402344},
     {-270.86627197265625, 8.777145385742188, -108.54436492919922},
-    {-270.0456237792969, 8.777145385742188, -139.5933837890625},
     {-229.19044494628906, 8.777145385742188, -135.7124786376953},
     {-210.50486755371094, 8.777145385742188, -156.17869567871094},
     {-255.17996215820312, 8.777145385742188, -151.1239776611328},
@@ -132,5 +131,5 @@ local positions = {
 -- Iterate over each position and set the character's position
 for _, pos in ipairs(positions) do
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(unpack(pos))
-    wait(2.3) -- Wait for 2.3 second before moving to the next position
+    wait(2) -- Wait for 2 second before moving to the next position
 end
